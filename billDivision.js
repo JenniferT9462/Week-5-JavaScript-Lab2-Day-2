@@ -7,10 +7,12 @@ function billSplit() {
 
     let totalNumber = Number(totalBill);
     let friendsNumber = Number(numFriends);
-    splitChecks = totalNumber/friendsNumber;
+    splitChecks = (totalNumber/friendsNumber); 
+    //Round to 2 decimal points and still keep it a number
+    rounded = Math.round(splitChecks * 100) / 100
     
     billHeader.innerHTML = `Your total bill is... $${totalBill}...Split ${numFriends} ways.`;
-    billResult.innerHTML = `Each person in your group should pay: <strong>$${splitChecks}</strong>`;
+    billResult.innerHTML = `Each person in your group should pay: <strong>$${rounded}</strong>`;
     billParagraph.innerHTML = "Don't forget to tip your servers!";
 
 }
