@@ -1,0 +1,30 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: beige;
+    color: yellowgreen;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 24px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    text-align: center;
+}
+a {
+    color: purple;
+}
+
+nav a.active {
+    background-color: purple;
+    color: white;
+}
+h3 {
+    text-align: center;
+    border: solid 2px;
+    font-size: 24px;
+}
