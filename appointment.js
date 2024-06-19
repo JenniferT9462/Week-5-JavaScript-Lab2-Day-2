@@ -13,7 +13,7 @@ function scheduler() {
 
     review.innerHTML = `Hi! ${patientName}. Your appointment with Dr. ${doctor} is scheduled for:`;
     appointmentParagraph.innerHTML = `${date} at ${time} o'clock.`;
-    message.innerHTML = `Message to doctor:<br><br> ${message}.`
+    messageParagraph.innerHTML = `<strong>Message to doctor:</strong><br><br> "${message}".`;
 
     
 }
